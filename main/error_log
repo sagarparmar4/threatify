@@ -1,0 +1,41 @@
+[02-Apr-2019 11:43:36 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'cyber_attack_website'@'localhost' (using password: YES) in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 2
+[02-Apr-2019 11:44:19 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'cyber_attack_website'@'localhost' (using password: YES) in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 2
+[02-Apr-2019 11:44:19 UTC] PHP Notice:  Only variables should be passed by reference in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 6
+[02-Apr-2019 11:44:19 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/denisos/public_html/cyber_attack_website/PHPExcel/Reader/Excel2007.php:94
+Stack trace:
+#0 /home/denisos/public_html/cyber_attack_website/PHPExcel/IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('/tmp/phpRA3RNm')
+#1 /home/denisos/public_html/cyber_attack_website/PHPExcel/IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('/tmp/phpRA3RNm')
+#2 /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php(12): PHPExcel_IOFactory::load('/tmp/phpRA3RNm')
+#3 {main}
+  thrown in /home/denisos/public_html/cyber_attack_website/PHPExcel/Reader/Excel2007.php on line 94
+[02-Apr-2019 11:44:34 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'cyber_attack_website'@'localhost' (using password: YES) in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 2
+[02-Apr-2019 11:45:58 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'cyber_attack_website'@'localhost' (using password: YES) in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 2
+[02-Apr-2019 11:46:14 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'cyber_attack_website'@'localhost' (using password: YES) in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 2
+[02-Apr-2019 11:46:14 UTC] PHP Notice:  Only variables should be passed by reference in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 6
+[02-Apr-2019 11:46:14 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/denisos/public_html/cyber_attack_website/PHPExcel/Reader/Excel2007.php:94
+Stack trace:
+#0 /home/denisos/public_html/cyber_attack_website/PHPExcel/IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('/tmp/phphU1bjK')
+#1 /home/denisos/public_html/cyber_attack_website/PHPExcel/IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('/tmp/phphU1bjK')
+#2 /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php(12): PHPExcel_IOFactory::load('/tmp/phphU1bjK')
+#3 {main}
+  thrown in /home/denisos/public_html/cyber_attack_website/PHPExcel/Reader/Excel2007.php on line 94
+[02-Apr-2019 11:49:24 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'cyber_attack_website'@'localhost' (using password: YES) in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 2
+[02-Apr-2019 11:49:40 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'cyber_attack_website'@'localhost' (using password: YES) in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 2
+[02-Apr-2019 11:49:40 UTC] PHP Notice:  Only variables should be passed by reference in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 6
+[02-Apr-2019 11:49:40 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/denisos/public_html/cyber_attack_website/PHPExcel/Reader/Excel2007.php:94
+Stack trace:
+#0 /home/denisos/public_html/cyber_attack_website/PHPExcel/IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('/tmp/phpVgu0jh')
+#1 /home/denisos/public_html/cyber_attack_website/PHPExcel/IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('/tmp/phpVgu0jh')
+#2 /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php(12): PHPExcel_IOFactory::load('/tmp/phpVgu0jh')
+#3 {main}
+  thrown in /home/denisos/public_html/cyber_attack_website/PHPExcel/Reader/Excel2007.php on line 94
+[02-Apr-2019 11:49:46 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'cyber_attack_website'@'localhost' (using password: YES) in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 2
+[02-Apr-2019 11:49:58 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'cyber_attack_website'@'localhost' (using password: YES) in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 2
+[02-Apr-2019 11:50:20 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'cyber_attack_website'@'localhost' (using password: YES) in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 2
+[02-Apr-2019 11:50:20 UTC] PHP Strict Standards:  Only variables should be passed by reference in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 6
+[02-Apr-2019 11:50:20 UTC] PHP Fatal error:  Class 'ZipArchive' not found in /home/denisos/public_html/cyber_attack_website/PHPExcel/Reader/Excel2007.php on line 94
+[02-Apr-2019 11:50:28 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'cyber_attack_website'@'localhost' (using password: YES) in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 2
+[02-Apr-2019 11:53:33 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'cyber_attack_website'@'localhost' (using password: YES) in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 2
+[02-Apr-2019 11:54:03 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'cyber_attack_website'@'localhost' (using password: YES) in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 2
+[02-Apr-2019 11:54:03 UTC] PHP Strict Standards:  Only variables should be passed by reference in /home/denisos/public_html/cyber_attack_website/SECOND_PAGE_LEFT_TOP.php on line 6
+[02-Apr-2019 11:54:03 UTC] PHP Fatal error:  Class 'ZipArchive' not found in /home/denisos/public_html/cyber_attack_website/PHPExcel/Reader/Excel2007.php on line 94

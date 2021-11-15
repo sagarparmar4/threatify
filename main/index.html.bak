@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cyber Attack Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Coda:400,800" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" media="all" href="assets/jquery-jvectormap.css"/>
+  <script src="assets/jquery-1.8.2.js"></script>
+  <script src="assets/jquery-jvectormap.js"></script>
+  <script src="lib/jquery-mousewheel.js"></script>
+
+  <script src="src/jvectormap.js"></script>
+
+  <script src="src/abstract-element.js"></script>
+  <script src="src/abstract-canvas-element.js"></script>
+  <script src="src/abstract-shape-element.js"></script>
+
+  <script src="src/svg-element.js"></script>
+  <script src="src/svg-group-element.js"></script>
+  <script src="src/svg-canvas-element.js"></script>
+  <script src="src/svg-shape-element.js"></script>
+  <script src="src/svg-path-element.js"></script>
+  <script src="src/svg-circle-element.js"></script>
+  <script src="src/svg-image-element.js"></script>
+  <script src="src/svg-text-element.js"></script>
+
+  <script src="src/vml-element.js"></script>
+  <script src="src/vml-group-element.js"></script>
+  <script src="src/vml-canvas-element.js"></script>
+  <script src="src/vml-shape-element.js"></script>
+  <script src="src/vml-path-element.js"></script>
+  <script src="src/vml-circle-element.js"></script>
+  <script src="src/vml-image-element.js"></script>
+
+  <script src="src/map-object.js"></script>
+  <script src="src/region.js"></script>
+  <script src="src/marker.js"></script>
+
+  <script src="src/vector-canvas.js"></script>
+  <script src="src/simple-scale.js"></script>
+  <script src="src/ordinal-scale.js"></script>
+  <script src="src/numeric-scale.js"></script>
+  <script src="src/color-scale.js"></script>
+  <script src="src/legend.js"></script>
+  <script src="src/data-series.js"></script>
+  <script src="src/proj.js"></script>
+  <script src="src/map.js"></script>
+
+  <script src="assets/jquery-jvectormap-world-mill-en.js"></script>
+  <script>
+    jQuery.noConflict();
+    jQuery(function(){
+      var $ = jQuery;
+
+      $('#focus-single').click(function(){
+        $('#map1').vectorMap('set', 'focus', {region: 'AU', animate: true});
+      });
+      $('#focus-multiple').click(function(){
+        $('#map1').vectorMap('set', 'focus', {regions: ['AU', 'JP'], animate: true});
+      });
+      $('#focus-coords').click(function(){
+        $('#map1').vectorMap('set', 'focus', {scale: 7, lat: 35, lng: 33, animate: true});
+      });
+      $('#focus-init').click(function(){
+        $('#map1').vectorMap('set', 'focus', {scale: 1, x: 0.5, y: 0.5, animate: true});
+      });
+      $('#map1').vectorMap({
+        map: 'world_mill_en',
+        panOnDrag: true,
+        focusOn: {
+          x: 0.5,
+          y: 0.5,
+          scale: 0,
+          animate: true
+        },
+        series: {
+          regions: [{
+            scale: ['#7d0000', '#ff001a'],
+            normalizeFunction: 'polynomial',
+            values: {
+              "AF": 2000,
+              "AL": 2000,
+              "DZ": 2000,
+              "AO": 2000,
+              "AG": 2000,
+              "AR": 1500,
+              "AM": 2000,
+              "AU": 2000,
+              "AT": 2000,
+              "AZ": 2000,
+              "BS": 350,
+              "BH": 2000,
+              "BD": 850,
+              "BB": 2000,
+              "BY": 2000,
+              "BE": 2000,
+              "BZ": 2000,
+              "BJ": 2000,
+              "BT": 2000,
+              "BO": 2000,
+              "BA": 2000,
+              "BW": 2000,
+              "BR": 350,
+              "BN": 2000,
+              "BG": 2000,
+              "BF": 2000,
+              "BI": 2000,
+              "KH": 2000,
+              "CM": 2000,
+              "CA": 1000,
+              "CV": 2000,
+              "CF": 1500,
+              "TD": 2000,
+              "CL": 850,
+              "CN": 200,
+              "CO": 1500,
+              "KM": 2000,
+              "CD": 2000,
+              "CG": 2000,
+              "CR": 2000,
+              "CI": 2000,
+              "HR": 1500,
+              "CY": 2000,
+              "CZ": 2000,
+              "DK": 2000,
+              "DJ": 2000,
+              "DM": 2000,
+              "DO": 2000,
+              "EC": 2000,
+              "EG": 2000,
+              "SV": 2000,
+              "GQ": 2000,
+              "ER": 850,
+              "EE": 2000,
+              "ET": 2000,
+              "FJ": 2000,
+              "FI": 2000,
+              "FR": 2000,
+              "GA": 2000,
+              "GM": 2000,
+              "GE": 2000,
+              "DE": 200,
+              "GH": 1500,
+              "GR": 2000,
+              "GD": 2000,
+              "GT": 2000,
+              "GN": 2000,
+              "GW": 2000,
+              "GY": 2000,
+              "HT": 2000,
+              "HN": 2000,
+              "HK": 2000,
+              "HU": 2000,
+              "IS": 2000,
+              "IN": 850,
+              "ID": 1000,
+              "IR": 1000,
+              "IQ": 2000,
+              "IE": 2000,
+              "IL": 1000,
+              "IT": 1000,
+              "JM": 2000,
+			  "GL": 2000,
+			  "SS": 2000,
+			  "SO": 2000,
+			  "_2": 2000,
+			  "CU": 2000,
+			  "KP": 2000,
+			  "EH": 2000, 
+              "JP": 1000,
+              "JO": 2000,
+              "KZ": 2000,
+              "KE": 2000,
+              "KI": 2000,
+              "KR": 1000,
+              "KW": 2000,
+              "KG": 2000,
+              "LA": 850,
+              "LV": 2000,
+              "LB": 2000,
+              "LS": 2000,
+              "LR": 2000,
+              "LY": 2000,
+              "LT": 2000,
+              "LU": 2000,
+              "MK": 1500,
+              "MG": 2000,
+              "MW": 2000,
+              "MY": 2000,
+              "MV": 2000,
+              "ML": 2000,
+              "MT": 2000,
+              "MR": 2000,
+              "MU": 2000,
+              "MX": 1500,
+              "MD": 2000,
+              "MN": 2000,
+              "ME": 2000,
+              "MA": 1500,
+              "MZ": 2000,
+              "MM": 2000,
+              "NA": 2000,
+              "NP": 2000,
+              "NL": 500,
+              "NZ": 2000,
+              "NI": 2000,
+              "NE": 2000,
+              "NG": 2000,
+              "NO": 2000,
+              "OM": 2000,
+              "PK": 2000,
+              "PA": 2000,
+              "PG": 2000,
+              "PY": 2000,
+              "PE": 1500,
+              "PH": 850,
+              "PL": 1500,
+              "PT": 1500,
+              "QA": 2000,
+              "RO": 2000,
+              "RU": 100,
+              "RW": 350,
+              "WS": 2000,
+              "ST": 2000,
+              "SA": 2000,
+              "SN": 2000,
+              "RS": 2000,
+              "SC": 2000,
+              "SL": 2000,
+              "SG": 2000,
+              "SK": 2000,
+              "SI": 2000,
+              "SB": 2000,
+              "ZA": 2000,
+              "ES": 850,
+              "LK": 2000,
+              "KN": 2000,
+              "LC": 2000,
+              "VC": 2000,
+              "SD": 2000,
+              "SR": 2000,
+              "SZ": 2000,
+              "SE": 2000,
+              "CH": 1500,
+              "SY": 2000,
+              "TW": 2000,
+              "TJ": 2000,
+              "TZ": 2000,
+              "TH": 1000,
+              "TL": 2000,
+              "TG": 2000,
+              "TO": 2000,
+              "TT": 2000,
+              "TN": 2000,
+              "TR": 1000,
+              "TM": 2000,
+              "UG": 2000,
+              "UA": 1500,
+              "AE": 2000,
+              "GB": 1500,
+              "US": 50,
+              "UY": 2000,
+              "UZ": 2000,
+              "VU": 2000,
+              "VE": 2000,
+              "VN": 850,
+              "YE": 850,
+              "ZM": 2000,
+              "ZW": 2000
+            }
+          }]
+        }
+		
+      });
+
+    })
+	
+  </script>
+  
+
+
+</head>
+<body >
+<div class="main-div" style="background:url(images/bg0.png) no-repeat; background-size:cover">
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<h2><img src='images/web_icon.gif' width='80px'> Cyber Attack Prediction and Analysis using Spatial and Geo Hotspot</h2>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<nav class="navbar navbar-inverse">
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					  </button>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+					  <ul class="nav navbar-nav cus-nav">
+						<li><a href="index.html">Live Map </a></li>
+						<li><a href="prediction.html">Prediction</a></li>
+						<li><a href="statistics.html">Statistics</a></li> 
+						<li><a href="attack_information.html">Attack Info & Prevention</a></li> 
+						<li><a href="about.html">About Us</a></li> 
+					  </ul>
+					  
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+	<div class="map-div">
+		<div class="container">
+			<div id="map1" style="width: 80%; height: 500px"></div>
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>

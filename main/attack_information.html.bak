@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cyber Attack Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Coda:400,800" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+</head>
+<body >
+<div class="main-div" style="background:url(images/bg0.png) no-repeat; background-size:cover">
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<h2><img src='images/web_icon.gif' width='80px'> Cyber Attack Prediction and Analysis using Spatial and Geo Hotspot</h2>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<nav class="navbar navbar-inverse">
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					  </button>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+					  <ul class="nav navbar-nav cus-nav">
+						<li><a href="index.html">Live Map </a></li>
+						<li><a href="prediction.html">Prediction</a></li>
+						<li><a href="statistics.html">Statistics</a></li> 
+						<li><a href="attack_information.html" class="active">Attack Information</a></li> 
+						<li><a href="about.html">About Us</a></li> 
+					  </ul>
+					  
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+	<div class="content-div">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="cus-info-div">
+						<h4>OAS - On-Access Scan</h4>
+						<p>OAS (On-Access Scan) shows malware detection flow
+							during On-Access Scan, i.e. when objects are
+							accessed during open, copy, run or save
+							operations.</p>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="cus-info-div">
+						<h4>ODS - On-Demand Scan</h4>
+						<p>ODS (On Demand Scanner) shows malware detection
+						flow during On-Demand Scan, when the user
+						manually selects the ’Scan for viruses’ option in
+						the context menu.</p>
+					</div>
+				</div>
+				
+				<div class="col-sm-6">
+					<div class="cus-info-div">
+						<h4>BAD - Botnet Activity Detection</h4>
+						<p>BAD (Botnet Activity Detection) shows statistics
+						on identified IP-addresses of DDoS-attacks
+						victims and botnet C&C servers. These statistics
+						were acquired with the help of the DDoS
+						Intelligence system (part of the solution
+						Kaspersky DDoS Protection).</p>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="cus-info-div">
+						<h4>MAV - Mail Anti-Virus</h4>
+						<p>MAV (Mail Anti-Virus) shows malware detection
+							flow during Mail Anti-Virus scan when new objects
+							appear in an email application (Outlook, The Bat,
+							Thunderbird). The MAV scans incoming messages and
+							calls OAS when saving attachments to a disk.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="content-div">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="cus-info-div">
+						<h4>OAS - On-Access Scan</h4>
+						<p>OAS (On-Access Scan) shows malware detection flow
+							during On-Access Scan, i.e. when objects are
+							accessed during open, copy, run or save
+							operations.</p>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="cus-info-div">
+						<h4>ODS - On-Demand Scan</h4>
+						<p>ODS (On Demand Scanner) shows malware detection
+						flow during On-Demand Scan, when the user
+						manually selects the ’Scan for viruses’ option in
+						the context menu.</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div> 
+</div>
+</body>
+</html>

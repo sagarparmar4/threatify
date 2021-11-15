@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cyber Attack Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Coda:400,800" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/chart.js"></script>
+  <script src="js/chart-main.js"></script>
+  <script>
+		var config = {
+			type: 'line',
+			data: {
+				labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+				datasets: [{
+					label: 'Spam',
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [10, 30, 50, 20, 25, 44, -10],
+					fill: false,
+				}, {
+					label: 'Network Attacks',
+					fill: false,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [100, 33, 22, 19, 11, 49, 30],
+				}, {
+					label: 'Local Infections',
+					fill: false,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [30, 45, 11, 19, 11, 58, 30 ,20],
+				}, {
+					label: 'On-Demand',
+					fill: false,
+					backgroundColor: window.chartColors.black,
+					borderColor: window.chartColors.black,
+					data: [40, 30, 45, 10, 15, 58, 20 ,10],
+				}, {
+					label: 'Web Threats',
+					fill: false,
+					backgroundColor: window.chartColors.purple,
+					borderColor: window.chartColors.purple,
+					data: [20, 45, 10, 15, 18, 30, 20 ,25],
+				}, {
+					label: 'Infected Mail',
+					fill: false,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [15, 19, 10, 26, 37, 22, 25 ,7],
+				}, {
+					label: 'Vulnerabilities',
+					fill: false,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [2, 12, 7, 18, 22, 22, 19 ,23],
+				}, {
+					label: 'Botnet Activity',
+					fill: false,
+					backgroundColor: window.chartColors.brown,
+					borderColor: window.chartColors.brown,
+					data: [45, 35, 17, 19, 29, 20, 33 ,26],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: ''
+				},
+				scales: {
+					yAxes: [{
+						ticks: {
+							min: 10,
+							max: 50
+						}
+					}]
+				}
+			}
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('canvas').getContext('2d');
+			window.myLine = new Chart(ctx, config);
+		};
+	</script>
+</head>
+<body >
+<div class="main-div" style="background:url(images/bg0.png) no-repeat; background-size:cover">
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<h2><img src='images/web_icon.gif' width='80px'> Cyber Attack Prediction and Analysis using Spatial and Geo Hotspot</h2>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<nav class="navbar navbar-inverse">
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					  </button>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+					  <ul class="nav navbar-nav cus-nav">
+						<li><a href="index.html">Live Map </a></li>
+						<li><a href="prediction.html">Prediction</a></li>
+						<li><a href="statistics.html" class="active">Statistics</a></li> 
+						<li><a href="attack_information.html">Attack Information</a></li> 
+						<li><a href="about.html">About Us</a></li> 
+					  </ul>
+					  
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+	<div class="content-div">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h4 class="cus-heading">Country-wise Plot India</h4>
+				</div>
+				<div class="col-sm-6">
+					<div class="form-group">
+					  <select class="form-control cus-select" id="sel1">
+						<option>Web Threats</option>
+						<option>Web Threats</option>
+						<option>Web Threats</option>
+						<option>Web Threats</option>
+					  </select>
+					</div>
+				</div>
+			</div>
+			<!-- <div id="chartContainer" style="height: 370px; width: 100%;"></div> -->
+			<div style="width: 100%; background:#fff;">
+				<canvas id="canvas"></canvas>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="sec-back" style="background:url(images/bg4_country.gif) no-repeat; background-size:cover">
+					<div class="overlay"></div>
+					<h4>Top Attacked Countries</h4>
+					<ul>
+						<li>China</li>
+						<li>USA</li>
+						<li>Russia</li>
+						<li>India</li>
+						<li>Canada</li>
+					</ul>
+				</div>
+				<p class="total">Total Countries Scanned: <span>234</span></p>
+			</div>
+			
+			<div class="col-sm-6">
+				<div class="sec-back" style="background:url(images/bg3_attack.jpg) no-repeat; background-size:cover">
+				<div class="overlay"></div>
+					<h4>Top Malwares</h4>
+					<ul>
+						<li>Web Threats</li>
+						<li>Botnet Activity</li>
+						<li>On-Demand Scan</li>
+						<li>Network Attacks</li>
+						<li>Local Infections</li>
+					</ul>
+				</div>
+				<p class="total">Total Different Type of Cyber Attacks:  <span>12</span></p>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
